@@ -1,6 +1,6 @@
 package com.vida.plus.entity;
 
-import com.vida.plus.enums.CategoriaProfissionalSaude;
+import com.vida.plus.enums.CategoriaProfissional;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "profissional_saude")
-public class ProfissionalSaude {
+public class Profissional {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,7 +32,7 @@ public class ProfissionalSaude {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private CategoriaProfissionalSaude tipo;
+    private CategoriaProfissional tipo;
 
     @Column(nullable = false)
     private String email;
