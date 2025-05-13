@@ -1,4 +1,4 @@
-package com.vida.plus.entity;
+package com.vida.plus.enums;
 
 public enum StatusInternacao {
     AGUARDANDO("Internação solicitada, aguardando confirmação ou liberação."),
